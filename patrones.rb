@@ -90,10 +90,8 @@ puts"\nMenu:
 "
 metodo=gets.chomp.to_i
 
-if metodo > 7 || metodo== 0
+if metodo > 7 || metodo<= 0
     puts"Opción invalida vuelva a iniciar"
-elsif metodo.class == 'Integer'
-    puts"No es un número vuelva a iniciar"
 else
     puts"ahora ingrese la cantidad de lineas"
 n=gets.chomp.to_i
